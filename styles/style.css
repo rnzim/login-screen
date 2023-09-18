@@ -1,0 +1,184 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+html,body{
+    width: 100vw;
+    height: 100vh;
+}
+h1{
+    text-align: center;
+}
+p{
+    padding: 5px;
+    font-size: 0.8em;
+}
+body{
+   background-color: #876DED;
+   position: relative;
+}
+
+main{
+   position: relative;
+    
+    
+}
+section#login{
+    overflow: hidden;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,20%);
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
+}
+.img{
+    width: 250px;
+    height: 200px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+input
+{
+    display: inline;
+    font-size: 1.1em;
+    height: 35px;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    width: calc(100%-50px);
+    background-color: #72c2f77d;
+    outline: none;
+   
+   
+    
+}
+.back{
+    height: 200px;
+    background-image: url('../img/login.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+   
+}
+button{
+    padding: 10px;
+    width: 100%;
+    border-radius: 7px;
+    border: none;
+    background-color: #7297E0;
+    margin-top:5px;
+}
+#forml{
+    padding: 10px;
+}
+.in{
+    display: block;
+    background-color: #876DED;
+    height: 40px;
+    border-radius: 6px;
+    margin-bottom: 5px;
+
+}
+a{
+    display: block;
+    padding: 7px;
+    width: 93%;
+    border-radius: 7px;
+    color: #7297E0;
+    text-decoration: none;
+    border: #7297E0 1px solid;
+    margin-top:5px;
+    text-align: center;
+    font-size: 15px;
+}
+span{
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    transform: translateY(5px);
+   
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body{background-image: linear-gradient(to top,#876DED,#72C1F7);}
+    section#login{
+        width: 90vw;
+        height: 50vh;
+        float: right;
+        margin-left: 10px;
+    }
+    .back{
+        background-position: center left;
+       
+      
+        
+
+    }
+    section > div.back{
+        float: left;
+        height: 90vh;
+        width: 25vw;
+       
+    }
+    button{
+        padding: 10px;
+        width: 68%;
+        border-radius: 7px;
+        border: none;
+        background-color: #7297E0;
+        margin-top:5px;
+    }
+    input
+   {
+    background-color: #7297E0;
+   }
+   .in{
+    background-color: #7297E0;
+    border: none;
+}
+}
+@media screen and (min-width: 992px) {
+    body{background-image: linear-gradient(to top,#876DED,#72C1F7);}
+    section#login{
+        width: 900px;
+        height: 50vh;
+       
+    }
+    .back{
+        background-position: center left;
+        
+
+    }
+    section > div.back{
+        float: right;
+        height: 90vh;
+        width: 20vw;
+    }
+    button{
+        padding: 10px;
+        width: 30%;
+        border-radius: 7px;
+        border: none;
+        background-color: #7297E0;
+        margin-top:5px;
+       
+    }
+    input
+    {
+     background-color: #7297E0;
+     border: none;
+    }
+    a{
+        width: 28%;
+    }
+    .in{
+        background-color: #7297E0;
+    }
+}
